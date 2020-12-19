@@ -1,0 +1,17 @@
+apt_packages:
+ - { name: ansible }
+ - { name: ansible-lint }
+ - { name: gimp }
+ - { name: git }
+ - { name: inkscape }
+ - { name: htop }
+ - { name: jq }
+ - { name: lsof }
+ - { name: peco }
+ - { name: tmux }
+ - { name: tree }
+ - { name: vim }
+ - { name: wget }
+ - { name: zsh }
+ - { name: zsh-autosuggestions }
+ - { name: zsh-syntax-highlighting }
