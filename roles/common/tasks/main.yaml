@@ -1,0 +1,2 @@
+- name: Change shell to zsh
+  shell: echo 'zsh' | sudo chsh kiriake
