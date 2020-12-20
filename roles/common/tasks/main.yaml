@@ -1,2 +1,47 @@
 - name: Change shell to zsh
   shell: echo 'zsh' | sudo chsh kiriake
+
+- name: Copy zshrc
+  copy:
+    src: ~/git/dotfiles/zshrc
+    dest: ~/.zshrc
+    owner: kiriake
+    group: kiriake
+    mode: '0644'
+
+- name: Copy tmux conf
+  copy:
+    src: ~/git/dotfiles/tmux.conf
+    dest: ~/.tmux.conf
+    owner: kiriake
+    group: kiriake
+    mode: '0644'
+
+- name: Copy vimrc
+  copy:
+    src: ~/git/dotfiles/vimrc
+    dest: ~/.vimrc
+    owner: kiriake
+    group: kiriake
+    mode: '0644'
+
+- name: Copy deinrc
+  copy:
+    src: ~/git/dotfiles/deinrc
+    dest: ~/.deinrc
+    owner: kiriake
+    group: kiriake
+    mode: '0644'
+
+- name: dein cache location
+  file: path=~/.cache/dein state=directory owner=kiriake group=kiriake mode=0755
+
+- name: Download dein install script
+  get_url:
+    url: https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
+    dest: ~/.cache/dein/installer.sh
+    mode: '0755'
+
+- name: Run script install dein
+  script: ~/.cache/dein/installer.sh /home/kiriake/.cache/dein
+
