@@ -1,0 +1,9 @@
+- name: Get installed mas packages list
+  shell: mas list
+  resister: mas_installed_list
+  changed_when: false
+  check_mode: no
+
+- name: Install mas packages
+  shell: mas install "{{ item.id }}"
+  with_items: "{{ mas_packages }}"

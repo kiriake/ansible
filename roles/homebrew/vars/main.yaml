@@ -1,0 +1,49 @@
+homebrew_taps:
+  - { tap: caskroom/cask }
+
+homebrew_cask_packages:
+  - { name: aquaskk }
+  - { name: clipy }
+  - { name: caffeine }
+  - { name: dash }
+  - { name: discord }
+  - { name: fantastical }
+  - { name: firefox }
+  - { name: google-chrome }
+  - { name: helium }
+  - { name: pycharm }
+  - { name: skitch }
+  - { name: slack }
+  - { name: spectacle }
+  - { name: spotify }
+  - { name: the-unarchiver }
+  - { name: vivaldi }
+  - { name: 1password }
+
+homebrew_packages:
+  - { name: ansible }
+  - { name: anyenv }
+  - { name: awscli }
+  - { name: colordiff }
+  - { name: curl }
+  - { name: direnv }
+  - { name: docker }
+  - { name: gawk }
+  - { name: git }
+  - { name: ghq }
+  - { name: htop }
+  - { name: ipcalc }
+  - { name: jq }
+  - { name: mas }
+  - { name: openssl }
+  - { name: peco }
+  - { name: reattach-to-user-namespace }
+  - { name: terraform }
+  - { name: tmux }
+  - { name: tree }
+  - { name: vim }
+  - { name: wget }
+  - { name: yarn }
+  - { name: zplug }
+  - { name: zsh }
+  - { name: zsh-completion }

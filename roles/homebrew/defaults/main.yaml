@@ -1,0 +1,39 @@
+homebrew_taps:
+  - { tap: caskroom/cask }
+
+homebrew_cask_packages:
+  - { name: google-chrome }
+  - { name: firefox }
+  - { name: skitch }
+  - { name: clipy }
+  - { name: aquaskk }
+  - { name: slack }
+  - { name: dash }
+
+homebrew_packages:
+  - { name: ansible }
+  - { name: awscli }
+  - { name: curl }
+  - { name: direnv }
+  - { name: docker }
+  - { name: gawk }
+  - { name: git }
+  - { name: htop }
+  - { name: ipcalc }
+  - { name: jq }
+  - { name: pyenv }
+  - { name: python }
+  - { name: python3 }
+  - { name: reattach-to-user-namespace }
+  - { name: remote-desktop-connection }
+  - { name: rbenv }
+  - { name: ruby }
+  - { name: terraform }
+  - { name: tmux }
+  - { name: tmux-xpanes }
+  - { name: tree }
+  - { name: vim }
+  - { name: wget }
+  - { name: yarn }
+  - { name: zsh }
+  - { name: zsh-completion }
