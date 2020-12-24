@@ -5,6 +5,7 @@
     update_cache: yes
 
 - name: Install apt packages
+  become: true
   apt:
     name: '{{ item.name }}'
   with_items: '{{ apt_packages }}'
