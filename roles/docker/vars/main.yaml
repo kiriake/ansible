@@ -1,0 +1,11 @@
+debian_docker_need_packages:
+ - { name: apt-transport-https }
+ - { name: ca-certificates }
+ - { name: curl }
+ - { name: gnupg-agent }
+ - { name: software-properties-common }
+
+debian_docker_install_packages:
+ - { name: docker-ce }
+ - { name: docker-ce-cli }
+ - { name: containerd.io } 

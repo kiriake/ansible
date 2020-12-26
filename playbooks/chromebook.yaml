@@ -2,3 +2,4 @@
   roles:
     - apt
     - common
+    - docker
