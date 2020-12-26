@@ -1,9 +1,12 @@
 apt_packages:
  - { name: ansible }
  - { name: ansible-lint }
+ - { name: colordiff }
  - { name: gimp }
  - { name: git }
+ - { name: hugo }
  - { name: inkscape }
+ - { name: ipcalc }
  - { name: htop }
  - { name: jq }
  - { name: lsof }
