@@ -4,23 +4,9 @@
   args:
     creates: /usr/local/bin/brew
 
-- name: Add homebrew taps
-  homebrew_tap:
-    name: "{{ item.tap }}"
-    state: present
-  with_items:
-    - "{{ homebrew_taps }}"
-
 - name: Update homebrew
   homebrew:
     update_homebrew: yes
-
-- name: Install homebrew cask packages
-  homebrew_cask:
-    name: "{{ item.name }}"
-    state: present
-  with_items:
-    - "{{ homebrew_cask_packages }}"
 
 - name: Install homebrew packages
   homebrew:

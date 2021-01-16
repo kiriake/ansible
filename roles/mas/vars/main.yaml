@@ -1,13 +1,10 @@
 mas_packages:
-  - { id: 443987910 } # 1password
   - { id: 866773894 } # quiver
   - { id: 715768417 } # microsoft remote desktop
-  - { id: 409789998 } # twitter
-  - { id: 409183694 } # keynote
-  - { id: 409201541 } # pages
-  - { id: 409203825 } # numbers
-  - { id: 405399194 } # kindle
-  - { id: 450442327 } # kaspersky virus scanner pro
+  # { id: 409183694 } # keynote
+  # { id: 409201541 } # pages
+  # { id: 409203825 } # numbers
   - { id: 803453959 } # slack
   - { id: 407963104 } # pixelmetor
-  - { id: 497799835 } # xcode
+  # { id: 497799835 } # xcode
+  - { id: 1054607607 } # Helium

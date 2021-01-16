@@ -6,7 +6,13 @@
     src: ~/git/dotfiles/zshrc
     dest: ~/.zshrc
     owner: kiriake
-    group: kiriake
+    mode: '0644'
+
+- name: Copy gitconfig
+  copy:
+    src: ~/git/dotfiles/gitconfig
+    dest: ~/.gitconfig
+    owner: kiriake
     mode: '0644'
 
 - name: Copy tmux conf
@@ -14,7 +20,6 @@
     src: ~/git/dotfiles/tmux.conf
     dest: ~/.tmux.conf
     owner: kiriake
-    group: kiriake
     mode: '0644'
 
 - name: Copy vimrc
@@ -22,7 +27,6 @@
     src: ~/git/dotfiles/vimrc
     dest: ~/.vimrc
     owner: kiriake
-    group: kiriake
     mode: '0644'
 
 - name: Copy deinrc
@@ -30,11 +34,10 @@
     src: ~/git/dotfiles/deinrc
     dest: ~/.deinrc
     owner: kiriake
-    group: kiriake
     mode: '0644'
 
 - name: dein cache location
-  file: path=~/.cache/dein state=directory owner=kiriake group=kiriake mode=0755
+  file: path=~/.cache/dein state=directory owner=kiriake mode=0755
 
 - name: Download dein install script
   get_url:
@@ -43,5 +46,5 @@
     mode: '0755'
 
 - name: Run script install dein
-  script: ~/.cache/dein/installer.sh /home/kiriake/.cache/dein
+  script: ~/.cache/dein/installer.sh ~/.cache/dein
 

@@ -1,0 +1,19 @@
+# - name: get docker package
+#   get_url:
+#     url: https://desktop.docker.com/mac/stable/Docker.dmg
+#     dest: ~/Downloads/Docker.dmg
+# 
+# - name: mount docker package
+#   shell: hdiutil mount ~/Downloads/Docker.dmg
+# 
+# - name: install docker
+#   shell: install -pkg /Volumes/Docker/Docker.pkg -target / -lang ja
+
+- name: get kubectl binaery
+  shell: curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+
+- name: install kubectl
+  shell: mv ./kubectl /usr/local/bin/kubectl
+
+- name: change executable kubectl
+  shell: chmod +x /usr/local/bin/kubectl
