@@ -27,3 +27,7 @@
   apt:
     name: '{{ item.name }}'
   with_items: '{{ debian_docker_install_packages }}'
+
+- name: User add group
+  become: true
+  shell: useradd -aG docker kiriake

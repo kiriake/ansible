@@ -1,5 +1,6 @@
 - name: Change shell to zsh
-  shell: echo 'zsh' | sudo chsh kiriake
+  become: true
+  shell: chsh kiriake -s $(which zsh)
 
 - name: Copy zshrc
   copy:
@@ -35,7 +36,7 @@
     dest: ~/.deinrc
     owner: kiriake
     mode: '0644'
-
+ 
 - name: dein cache location
   file: path=~/.cache/dein state=directory owner=kiriake mode=0755
 
